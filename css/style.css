@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", system-ui;
+}
+
+/* ==========common============ */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 50px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+/* ==========header============ */
+.header {
+  padding-top: 30px;
+  background: #d19c08;
+  min-height: 100px;
+  position: sticky;
+  top: -33px;
+}
+
+.header-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ThuongHieu {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  font-size: 1.8rem;
+  color: #553a00;
+  font-weight: 700;
+}
+
+.header .logo {
+  width: 70px;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__link:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #060606;
+}
+.navbar__link {
+  padding: 8px 21px;
+  color: #080704;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75;
+}
