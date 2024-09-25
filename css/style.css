@@ -66,3 +66,62 @@ a {
   font-weight: 600;
   line-height: 1.75;
 }
+
+/* =========================DEAL  ===================== */
+.deal1 {
+  width: 1170px;
+  border-radius: 5px;
+}
+/* =========================SLIDE ===================== */
+.slide {
+  background: #b60404;
+}
+
+.tenshop {
+  padding: 5px;
+}
+
+.tensanpham {
+  color: #eddd05;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.desc-item {
+  color: #eddd05;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.item {
+  padding: 20px;
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.desc-item__h2 {
+  margin: 20px;
+  color: #eddd05;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+.slide1-item__img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.desc-item__p1 {
+  color: #eddd05;
+  width: 350px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
