@@ -21,6 +21,9 @@ body {
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 /* ==========header============ */
 .header {
   padding-top: 30px;
@@ -28,6 +31,7 @@ a {
   min-height: 100px;
   position: sticky;
   top: -33px;
+  z-index: 1;
 }
 
 .header-top {
@@ -75,6 +79,7 @@ a {
 /* =========================SLIDE ===================== */
 .slide {
   background: #b60404;
+  cursor: pointer;
 }
 
 .tenshop {
@@ -97,7 +102,7 @@ a {
   line-height: 1.8;
 }
 
-.item {
+.slide-items {
   padding: 20px;
   column-gap: 30px;
   display: grid;
@@ -115,6 +120,7 @@ a {
 .slide1-item__img {
   width: 350px;
   height: 350px;
+  border-radius: 5px;
   object-fit: cover;
 }
 
@@ -124,4 +130,123 @@ a {
   text-align: center;
   font-size: 1.4rem;
   line-height: 1.8;
+}
+
+.control {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #080704;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.control-btn:hover {
+  background: #d19c08;
+  border-color: #d19c08;
+  color: #fff;
+}
+
+.control-btn__next {
+  rotate: 180deg;
+}
+/* =========================kem nhung ===================== */
+.sanpham .kemnhung-content {
+  background-color: #ffffff;
+  padding: 12px;
+}
+
+.kemnhung-content-title {
+  padding: 50px 15px 20px;
+  color: #000000;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+}
+.kemnhung-content-items {
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.kemnhung-content-item:hover img {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.kemnhung-img {
+  width: 270px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.kemnhung-content-item {
+  margin-top: 20px;
+  padding-bottom: 15px;
+  background-color: #f6f6f6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.kemnhung-content-item-text {
+  margin-left: 8px;
+}
+
+.kemnhung-content-item-text sup {
+  font-size: 0.8em;
+}
+
+.kemnhung-content-item li {
+  margin-bottom: 6px;
+}
+
+.kemnhung-content-item-text li:first-child {
+  padding-top: 5px;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.kemnhung-content-item-text strong {
+  background-color: #b60404;
+  padding: 2px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.kemnhung-content-item-text li:nth-child(2) {
+  margin: 15px 0;
+  /* font-style: italic; */
+  font-size: 1.4rem;
+  color: #3e3c37;
+}
+
+.kemnhung-content-item-text li:nth-child(3) {
+  color: #f10000;
+}
+
+.kemnhung-content-item-text li:last-child {
+  display: inline-block;
+  background-color: #fff;
+  color: #d54700;
+  border: 1px solid #e65d19;
+  border-radius: 3px;
+}
+/* =================kẹp tóc=========== */
+
+.keptoc-header {
+  padding: 40px 0;
 }

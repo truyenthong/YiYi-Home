@@ -126,63 +126,350 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">
-        <!-- deal giam gia ------------------------------------------>
-        <div class="deal">
-          <img src="./img/deal.webp" alt="deal" class="deal1" />
+      <!-- deal giam gia ------------------------------------------>
+      <section class="deal-header">
+        <div class="container">
+          <div class="deal">
+            <img src="./img/deal.webp" alt="deal" class="deal1" />
+          </div>
         </div>
-        <!--slide gioithieu ---------------------------------------->
-        <div class="slide">
-          <!-- SLIDE 1------------------------------------------- -->
-          <div class="slide1">
-            <h4 class="tenshop">Tiệm Hoa YiYi Home</h4>
-            <h1 class="tensanpham">DANH MỤC SẢN PHẨM</h1>
-            <h3 class="desc-item">
-              CHUYÊN KẼM NHUNG LÀM HOA DÀY MỊN, ĐỒ THỦ CÔNG HANDMADE
-            </h3>
-            <div class="item">
+      </section>
+      <!--slide  ---------------------------------------->
+      <section class="slide-header">
+        <div class="container">
+          <div class="slide">
+            <!-- SLIDE 1------------------------------------------- -->
+            <div class="slide1">
+              <h4 class="tenshop">Tiệm Hoa YiYi Home</h4>
+              <h1 class="tensanpham">DANH MỤC SẢN PHẨM</h1>
+              <h3 class="desc-item">
+                CHUYÊN KẼM NHUNG LÀM HOA DÀY MỊN, ĐỒ THỦ CÔNG HANDMADE
+              </h3>
+              <div class="slide-items">
+                <!-- item1 -->
+                <article class="slide-item">
+                  <h2 class="desc-item__h2">KẼM NHUNG</h2>
+                  <img
+                    src="./img/cac-mau-kem-nhung.jpg"
+                    alt="kẽm nhung"
+                    class="slide1-item__img"
+                  />
+                  <p class="desc-item__p1">
+                    CHUẨN DÀY MỊN LÊN HOA KHÍT ĐẸP KHÔNG THƯA
+                  </p>
+                </article>
+                <!-- item2 -->
+
+                <article class="slide-item">
+                  <h2 class="desc-item__h2">NHỤY BỘT</h2>
+                  <img
+                    src="./img/nhuy-hoa.jpg"
+                    alt="nhụy hoa"
+                    class="slide1-item__img"
+                  />
+                  <p class="desc-item__p1">
+                    NHỤY HOA BỘT LÀM HOA, BỘT CỨNG NHƯ NHỤY THẬT
+                  </p>
+                </article>
+                <!-- item3 -->
+
+                <article class="slide-item">
+                  <h2 class="desc-item__h2">KEO SÁP</h2>
+                  <img
+                    src="./img/keo-sap.webp"
+                    alt="keo sáp"
+                    class="slide1-item__img"
+                  />
+                  <p class="desc-item__p1">
+                    KEO SÁP QUẤN CÀNH THÂN CÂY, HOA HANDMADE
+                  </p>
+                </article>
+              </div>
+            </div>
+            <div class="control">
+              <!-- prev -->
+
+              <button class="control-btn">
+                <svg
+                  class="control-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="12"
+                  viewBox="0 0 6 12"
+                  fill="none"
+                >
+                  <path
+                    d="M5.5 1L0.5 6L5.5 11"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <!-- next -->
+
+              <button class="control-btn control-btn__next">
+                <svg
+                  class="control-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="12"
+                  viewBox="0 0 6 12"
+                  fill="none"
+                >
+                  <path
+                    d="M5.5 1L0.5 6L5.5 11"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- sản phẩm -->
+      <section class="sanpham">
+        <div class="container">
+          <div class="kemnhung-content">
+            <div class="kemnhung-content-title">
+              <h2>Phụ Kiện KẼM NHUNG</h2>
+            </div>
+            <div class="kemnhung-content-items">
               <!-- item1 -->
-              <div class="item1">
-                <h2 class="desc-item__h2">KẼM NHUNG</h2>
+              <div class="kemnhung-content-item">
                 <img
-                  src="./img/cac-mau-kem-nhung.jpg"
-                  alt="kẽm nhung"
-                  class="slide1-item__img"
+                  src="./img/kem-nhung/kem nhung.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
                 />
-                <h3 class="desc-item__p1">
-                  CHUẨN DÀY MỊN LÊN HOA KHÍT ĐẸP KHÔNG THƯA
-                </h3>
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Kẽm Nhung Handmade Làm Hoa Loại
+                    1
+                  </li>
+                  <li>Online gia re</li>
+                  <li>12.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
               </div>
+
               <!-- item2 -->
-
-              <div class="item1">
-                <h2 class="desc-item__h2">NHỤY BỘT</h2>
+              <div class="kemnhung-content-item">
                 <img
-                  src="./img/nhuy-hoa.jpg"
-                  alt="nhụy hoa"
-                  class="slide1-item__img"
+                  src="./img/Băng Keo Sáp, Băng Dính Quấn Cành/keo-sap.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
                 />
-                <h3 class="desc-item__p1">
-                  NHỤY HOA BỘT LÀM HOA, BỘT CỨNG NHƯ NHỤY THẬT
-                </h3>
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Băng Keo Sáp,Băng Keo Quấn Cành
+                  </li>
+                  <li>Online gia re</li>
+                  <li>10.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
               </div>
-              <!-- item3 -->
 
-              <div class="item1">
-                <h2 class="desc-item__h2">KEO SÁP</h2>
+              <!-- item3 -->
+              <div class="kemnhung-content-item">
                 <img
-                  src="./img/keo-sap.webp"
-                  alt="keo sáp"
-                  class="slide1-item__img"
+                  src="./img/[Có Lỗ ] Hạt Ngọc Trai Nhân Tạo Trắng Tinh , Kem Size 5-8-10 Handmade DIY YIYIHOME/hat-ngoc.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
                 />
-                <h3 class="desc-item__p1">
-                  KEO SÁP QUẤN CÀNH THÂN CÂY, HOA HANDMADE
-                </h3>
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Hạt Ngọc Trai Nhân Tạo Trắng
+                    Tinh
+                  </li>
+                  <li>Online gia re</li>
+                  <li>9.500<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item4 -->
+              <div class="kemnhung-content-item">
+                <img
+                  src="./img/kem-lam-than/kem-cung.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
+                />
+                <div class="kemnhung-content-item-text">
+                  <li><strong>Yêu thích+</strong> Kẽm Cành Làm Thân Hoa Giả</li>
+                  <li>Online gia re</li>
+                  <li>8.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item5 -->
+              <div class="kemnhung-content-item">
+                <img
+                  src="./img/NHỤY HOA BỘT LÀM HOA KẼM NHUNG, KẼM NHUNG HANDMADE YIYIHOME/nhuy-hoa.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
+                />
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Nhụy Hoa Bột Làm Hoa Kẽm Nhung
+                  </li>
+                  <li>Online gia re</li>
+                  <li>15.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item6 -->
+              <div class="kemnhung-content-item">
+                <img
+                  src="./img/Kéo Nhật HaSaMi Lưỡi Thép Không Gỉ, Kéo Cắt Đồ Thủ Công HandMade YiYihome/keo mau den.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
+                />
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Kéo Nhật HaSaMi Lưỡi Thép Không
+                    Rỉ
+                  </li>
+                  <li>Online gia re</li>
+                  <li>39.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item7 -->
+              <div class="kemnhung-content-item">
+                <img
+                  src="./img/DÂY ĐÈN LED ĐOM ĐÓM TRANG TRÍ 1MET, 2MET BẰNG PIN/den-led.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
+                />
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Dây Đèn LED Đom Đóm Trang Trí
+                  </li>
+                  <li>Online gia re</li>
+                  <li>9.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item8 -->
+              <div class="kemnhung-content-item">
+                <img
+                  src="./img/[Có Lỗ ] Hạt Ngọc Trai Nhân Tạo Trắng Tinh , Kem Size 5-8-10 Handmade DIY YIYIHOME/chuoi-hat-ngoc.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
+                />
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Cuộn Chuỗi Ngọc Hạt Trai Làm Bó
+                    Hoa
+                  </li>
+                  <li>Online gia re</li>
+                  <li>25.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item9 -->
+              <div class="kemnhung-content-item">
+                <img
+                  src="./img/bang-mau-mat/bang-mau-mat.webp"
+                  alt="kem nhung"
+                  class="kemnhung-img"
+                />
+                <div class="kemnhung-content-item-text">
+                  <li>
+                    <strong>Yêu thích+</strong> Bảng Màu Mắt Trang Trí Hoa Giả,
+                    Tô Hoa Kẽm Nhung
+                  </li>
+                  <li>Online gia re</li>
+                  <li>12.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- kẹp tóc -->
+      <section class="keptoc-header">
+        <div class="container">
+          <div class="keptoc kemnhung-content">
+            <div class="keptoc-title kemnhung-content-title">
+              <h2>KẸP TÓC XINH</h2>
+            </div>
+            <div class="keptoc-items kemnhung-content-items">
+              <!-- item1 -->
+              <div class="keptoc-item kemnhung-content-item">
+                <img
+                  src="./img/Kẹp Tóc Hoa Lan Hồ Điệp Nhân Tạo Dành Cho Nữ , Kẹp Hoa Cài Phong Cách Hawaii/kep-toc-hoa-su.webp"
+                  alt=""
+                  class="keptoc-item__img kemnhung-img"
+                />
+                <div class="keptoc-item-text kemnhung-content-item-text">
+                  <li><strong>yêu thích</strong> Kẹp Tóc Hoa Sứ Tráng Gương</li>
+                  <li>12.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item2 -->
+              <div class="keptoc-item kemnhung-content-item">
+                <img
+                  src="./img/Kẹp Tóc Hoa Lan Hồ Điệp Nhân Tạo Dành Cho Nữ , Kẹp Hoa Cài Phong Cách Hawaii/kep-toc-hoa-lan.webp"
+                  alt=""
+                  class="keptoc-item__img kemnhung-img"
+                />
+                <div class="keptoc-item-text kemnhung-content-item-text">
+                  <li>
+                    <strong>yêu thích</strong> Kẹp Tóc Hoa Lan Hồ Điệp Nhân Tạo
+                  </li>
+                  <li>12.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item3 -->
+              <div class="keptoc-item kemnhung-content-item">
+                <img
+                  src="./img/Kẹp Tóc Hoa Lan Hồ Điệp Nhân Tạo Dành Cho Nữ , Kẹp Hoa Cài Phong Cách Hawaii/kep-toc-hoa-may-trang.webp"
+                  alt=""
+                  class="keptoc-item__img kemnhung-img"
+                />
+                <div class="keptoc-item-text kemnhung-content-item-text">
+                  <li>
+                    <strong>yêu thích</strong> Kẹp Tóc Hoa Mây Trắng Mùa Hè
+                  </li>
+                  <li>12.000<sup>đ</sup></li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+
+              <!-- item4 -->
+              <div class="keptoc-item kemnhung-content-item">
+                <img
+                  src="./img/Kẹp Tóc Hoa Lan Hồ Điệp Nhân Tạo Dành Cho Nữ , Kẹp Hoa Cài Phong Cách Hawaii/kep-buom-buom.webp"
+                  alt=""
+                  class="keptoc-item__img kemnhung-img"
+                />
+                <div class="keptoc-item-text kemnhung-content-item-text">
+                  <li>
+                    <strong>yêu thích</strong> Kẹp Tóc Nơ, Kẹp Tóc Bươm Bướm
+                    Siêu Xinh
+                  </li>
+                  <li>#shopXuHuong</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
