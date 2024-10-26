@@ -12,68 +12,68 @@
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="./favicon//apple-icon-60x60.png"
+      href="./favicon/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="./favicon//apple-icon-72x72.png"
+      href="./favicon/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="./favicon//apple-icon-76x76.png"
+      href="./favicon/apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="./favicon//apple-icon-114x114.png"
+      href="./favicon/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="./favicon//apple-icon-120x120.png"
+      href="./favicon/apple-icon-120x120.png"
     />
-    <linv
+    <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="./favicon//apple-icon-144x144.png"
+      href="./favicon/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="./favicon//apple-icon-152x152.png"
+      href="./favicon/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./favicon//apple-icon-180x180.png"
+      href="./favicon/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="./favicon//android-icon-192x192.png"
+      href="./favicon/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon//favicon-32x32.png"
+      href="./favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="./favicon//favicon-96x96.png"
+      href="./favicon/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon//favicon-16x16.png"
+      href="./favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./favicon//manifest.json" />
+    <link rel="manifest" href="./favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
       name="msapplication-TileImage"
@@ -85,7 +85,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <!-- link icon google -->
@@ -100,15 +100,17 @@
     <title>Shop YiYi Home</title>
   </head>
   <body>
+    <!-- header------------------------------- -->
     <header class="header">
       <div class="container">
         <div class="header-top">
           <!-- logo -->
-          <a href="#!"
-            ><img src="./img/logo.png" alt="YiYi Home" class="logo"
-          /></a>
-          <a href="#!"><h2 class="ThuongHieu">Tiệm Hoa YiYi Home</h2></a>
-
+          <div class="header-logo">
+            <a href="#!"
+              ><img src="./img/logo.png" alt="YiYi Home" class="logo"
+            /></a>
+            <a href="#!"><h2 class="ThuongHieu">Tiệm Hoa YiYi Home</h2></a>
+          </div>
           <!-- nav -->
           <nav class="navbar">
             <ul class="navbar__list">
@@ -126,6 +128,20 @@
               </li>
             </ul>
           </nav>
+          <div class="header-top-cart">
+            <div class="cart">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Giỏ Hàng</p>
+              </a>
+            </div>
+            <div class="user">
+              <a href="./signUp-signIn/signup.html">
+                <i class="fa-solid fa-user"></i>
+                <p>Tài Khoản</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -138,98 +154,18 @@
           </div>
         </div>
       </section>
-      <!--slide  ---------------------------------------->
-      <section class="slide-header">
+      <!--slider  ---------------------------------------->
+      <section class="slider-header">
         <div class="container">
-          <div class="slide">
-            <!-- SLIDE 1------------------------------------------- -->
-            <div class="slide1">
-              <h4 class="tenshop">Tiệm Hoa YiYi Home</h4>
-              <h1 class="tensanpham">DANH MỤC SẢN PHẨM</h1>
-              <h3 class="desc-item">
-                CHUYÊN KẼM NHUNG LÀM HOA DÀY MỊN, ĐỒ THỦ CÔNG HANDMADE
-              </h3>
-              <div class="slide-items">
-                <!-- item1 -->
-                <article class="slide-item">
-                  <h2 class="desc-item__h2">KẼM NHUNG</h2>
-                  <img
-                    src="./img/cac-mau-kem-nhung.jpg"
-                    alt="kẽm nhung"
-                    class="slide1-item__img"
-                  />
-                  <p class="desc-item__p1">
-                    CHUẨN DÀY MỊN LÊN HOA KHÍT ĐẸP KHÔNG THƯA
-                  </p>
-                </article>
-                <!-- item2 -->
-
-                <article class="slide-item">
-                  <h2 class="desc-item__h2">NHỤY BỘT</h2>
-                  <img
-                    src="./img/nhuy-hoa.jpg"
-                    alt="nhụy hoa"
-                    class="slide1-item__img"
-                  />
-                  <p class="desc-item__p1">
-                    NHỤY HOA BỘT LÀM HOA, BỘT CỨNG NHƯ NHỤY THẬT
-                  </p>
-                </article>
-                <!-- item3 -->
-
-                <article class="slide-item">
-                  <h2 class="desc-item__h2">KEO SÁP</h2>
-                  <img
-                    src="./img/keo-sap.webp"
-                    alt="keo sáp"
-                    class="slide1-item__img"
-                  />
-                  <p class="desc-item__p1">
-                    KEO SÁP QUẤN CÀNH THÂN CÂY, HOA HANDMADE
-                  </p>
-                </article>
-              </div>
+          <div class="slider-father">
+            <div class="slider-child">
+              <a href="#!"><img src="./img/slider2.png" alt="" /></a>
+              <a href="#!"><img src="./img/slider1.png" alt="" /></a>
+              <a href="#!"><img src="./img/slider3.png" alt="" /></a>
             </div>
-            <div class="control">
-              <!-- prev -->
-
-              <button class="control-btn">
-                <svg
-                  class="control-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="6"
-                  height="12"
-                  viewBox="0 0 6 12"
-                  fill="none"
-                >
-                  <path
-                    d="M5.5 1L0.5 6L5.5 11"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-
-              <!-- next -->
-
-              <button class="control-btn control-btn__next">
-                <svg
-                  class="control-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="6"
-                  height="12"
-                  viewBox="0 0 6 12"
-                  fill="none"
-                >
-                  <path
-                    d="M5.5 1L0.5 6L5.5 11"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
+            <div class="slider-btn">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
         </div>
@@ -584,76 +520,83 @@
     <!-- ====================[foolter============================= -->
     <footer>
       <section class="foolter">
-        <div class="container">
-          <div class="foolter-items">
-            <!-- colunm 1 -->
-            <div class="foolter-colunm">
-              <!-- logo -->
-              <a href="#!"
-                ><img src="./img/logo.png" alt="YiYi Home" class="logo" />
-              </a>
-              <a href="#!"
-                ><h2 class="ThuongHieu foolter-thuonghieu">
-                  Tiệm Hoa YiYi Home
-                </h2></a
-              >
-              <!-- địa chi -->
+        <div class="foolter-items">
+          <!-- colunm 1 -->
+          <div class="foolter-colunm">
+            <!-- logo -->
+            <a href="#!"
+              ><img src="./img/logo.png" alt="YiYi Home" class="logo" />
+            </a>
+            <a href="#!"
+              ><h2 class="ThuongHieu foolter-thuonghieu">
+                Tiệm Hoa YiYi Home
+              </h2></a
+            >
+            <!-- địa chi -->
+            <ul>
+              <li>
+                <strong>Hotline/zalo:</strong> 0356 044 402 - 0565 351 172
+              </li>
+              <li>
+                <strong>Email:</strong> chờ chủ shop cute phô mai que tạo email
+                đã nha friends
+              </li>
+              <li><strong>Địa chỉ:</strong> chưa xác định hahaha</li>
+            </ul>
+          </div>
+
+          <!-- colunm 2 -->
+          <div class="foolter-colunm">
+            <h2 class="foolter-heading">CHĂM SÓC KHÁCH HÀNG</h2>
+            <ul>
+              <li>Giới Thiệu</li>
+              <li>Liên Hệ</li>
+              <li>Chính Sách Vận Chuyển</li>
+              <li>Câu Hỏi Thường Gặp</li>
+              <li>Hình Thức Thanh Toán</li>
+              <li>Bảo Mật Thông Tin</li>
+              <li>Chính Sách Hoàn Tiền</li>
+              <li>Xử Lý Khiếu Nại</li>
+              <li>Tại Sao Nên Chọn YiYiHome</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <!-- colunm 3 -->
+          <div class="foolter-colunm">
+            <h2 class="foolter-heading">THEO DÕI</h2>
+            <div class="socials">
               <ul>
-                <li><strong>Hotline:</strong> 1900 633 045</li>
-                <li><strong>Email:</strong> sales@flowercorner.vn</li>
                 <li>
-                  <strong>Địa chỉ:</strong> 142 Nguyễn Văn Cừ, Phường Nguyễn Cư
-                  Trinh, Quận 1, TP.HCM
+                  <a
+                    href="https://www.facebook.com/tiemhoayiyihome"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook"></i> Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/tiemhoayiyihome"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-tiktok"></i> Tiktok</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/tiemhoayiyihome"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-shopify"></i> shopee</a
+                  >
                 </li>
               </ul>
-              <img src="./img/bo-cong-thuong.png" alt="" class="bocongthuong" />
-            </div>
-
-            <!-- colunm 2 -->
-            <div class="foolter-colunm">
-              <h2 class="foolter-heading">CHĂM SÓC KHÁCH HÀNG</h2>
-              <ul>
-                <li>Giới Thiệu</li>
-                <li>Liên Hệ</li>
-                <li>Chính Sách Vận Chuyển</li>
-                <li>Câu Hỏi Thường Gặp</li>
-                <li>Hình Thức Thanh Toán</li>
-                <li>Bảo Mật Thông Tin</li>
-                <li>Chính Sách Hoàn Tiền</li>
-                <li>Xử Lý Khiếu Nại</li>
-                <li>Tại Sao Nên Chọn YiYiHome</li>
-                <li>Blog</li>
-              </ul>
-            </div>
-
-            <!-- colunm 3 -->
-            <div class="foolter-colunm">
-              <h2 class="foolter-heading">THEO DÕI</h2>
-              <div class="socials">
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/tiemhoayiyihome">
-                      <i class="fa-brands fa-facebook"></i> Facebook</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shopee.vn/yiyihome?page=0&shopCollection=253239919"
-                      ><i class="fa-brands fa-shopify"></i> Shopee
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40yiyihome0101%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR3SgEEza7kyItqctvPUbN7R8Fuz3oUFM33v0eRsBY2fSPYrbSWVATfRew4_aem_UOmO4hkKQFkWuRcxagbFMg&h=AT0RbtWF9qjdrleB8dhGkVZW8d6UejN0NhLkv-bBJ-u3xTEJ55LT12lTOz29ZGDjRv0We0oC1jKPKZLLYJRF6-j9dknpQZPBtxLOudZOMyElbe1D8kNLU8s7_Kf3LjEs71B78Mib9QxhHRwMF4uo"
-                      ><i class="fa-brands fa-tiktok"></i> Tiktok</a
-                    >
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
       </section>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

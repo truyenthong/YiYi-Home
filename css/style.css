@@ -9,6 +9,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", system-ui;
+  background: #bdbdbd;
 }
 
 /* ==========common============ */
@@ -26,12 +27,15 @@ li {
 }
 /* ==========header============ */
 .header {
-  padding-top: 30px;
-  background: #d19c08;
-  min-height: 100px;
+  min-height: 80px;
+  background: #818080;
   position: sticky;
-  top: -50px;
+  top: 0;
   z-index: 1;
+}
+
+.header-logo {
+  width: 360px;
 }
 
 .header-top {
@@ -43,11 +47,12 @@ li {
 
 .ThuongHieu {
   position: absolute;
-  top: 65px;
-  left: 65px;
+  top: 22px;
+  left: 70px;
   font-size: 1.8rem;
-  color: #553a00;
-  font-weight: 700;
+  color: #47340a;
+  font-family: "Lobster", sans-serif;
+  font-size: 30px;
 }
 
 .logo {
@@ -71,115 +76,122 @@ li {
   line-height: 1.75;
 }
 
+.header-top-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.header-top-cart p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px;
+  color: #000000;
+}
+
+.header-top-cart p:hover {
+  color: #691414;
+}
+.header-top-cart .user:hover a,
+.header-top-cart .cart:hover a {
+  text-shadow: 0.5px 0 0 currentColor;
+  color: #691414;
+  cursor: pointer;
+}
+
+.header-top-cart .user,
+.header-top-cart .cart {
+  padding-top: 5px;
+  border: 1px solid #3e3c37;
+  border-radius: 50px;
+}
+
 /* =========================DEAL  ===================== */
 .deal1 {
   width: 1170px;
   border-radius: 5px;
 }
 /* =========================SLIDE ===================== */
-.slide {
-  background: #b60404;
-  cursor: pointer;
-}
-
-.tenshop {
-  padding: 5px;
-}
-
-.tensanpham {
-  color: #eddd05;
-  text-align: center;
-  font-size: 6rem;
-  font-weight: 800;
-  line-height: 1.8;
-}
-
-.desc-item {
-  color: #eddd05;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.8;
-}
-
-.slide-items {
-  padding: 20px;
-  column-gap: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.desc-item__h2 {
-  margin: 20px;
-  color: #eddd05;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.8;
-}
-.slide1-item__img {
-  width: 350px;
-  height: 350px;
-  border-radius: 5px;
+.slider-header img {
+  width: 100%;
   object-fit: cover;
 }
 
-.desc-item__p1 {
-  color: #eddd05;
-  width: 350px;
-  text-align: center;
-  font-size: 1.4rem;
-  line-height: 1.8;
+.slider-father {
+  position: relative;
 }
 
-.control {
+.slider-child {
+  position: relative;
+  height: 660px;
+  transition: all 0.5s;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
   display: flex;
-  column-gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.slider-btn:hover i {
+  opacity: 1;
+}
+
+.slider-btn i {
+  color: #333;
+  font-style: 32px;
+  height: 60px;
+  width: 33px;
+  background-color: #ddd;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.control-btn {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  margin-bottom: 8px;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  border: 1px solid #080704;
-  background: #fff;
-  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  opacity: 0;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-.control-btn:hover {
-  background: #d19c08;
-  border-color: #d19c08;
-  color: #fff;
+.slider-father img {
+  width: 100%;
+  position: absolute;
+  transition: 0.5s;
+}
+/* muc thanh pham*/
+.slider-child a:nth-child(2) img {
+  transform: translateX(100%);
+}
+/* dac quyen */
+.slider-child a:nth-child(3) img {
+  transform: translateX(200%);
 }
 
-.control-btn__next {
-  rotate: 180deg;
+.slider-father {
+  overflow: hidden;
 }
 /* =========================kem nhung ===================== */
 .sanpham .kemnhung-content {
-  background-color: #ffffff;
   padding: 12px;
 }
 
 .kemnhung-content-title {
+  border-bottom: 1px solid #000000;
+  text-align: center;
   padding: 50px 15px 20px;
   color: #000000;
-  font-size: 2rem;
+  font-size: 3rem;
   font-style: italic;
   font-weight: 700;
 }
 .kemnhung-content-items {
-  column-gap: 30px;
+  column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .kemnhung-content-item:hover img {
@@ -230,7 +242,7 @@ li {
 
 .kemnhung-content-item-text li:nth-child(2) {
   margin: 15px 0;
-  /* font-style: italic; */
+  font-style: italic;
   font-size: 1.4rem;
   color: #3e3c37;
 }
@@ -255,7 +267,7 @@ li {
 /* =================foolter=========== */
 .foolter {
   padding: 50px 0 30px 0;
-  background: #ffffff;
+  background: rgba(189, 189, 189, 0.395);
 }
 
 .foolter li:hover {
@@ -264,13 +276,13 @@ li {
 }
 
 .foolter-items {
-  padding-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid #141414;
 }
 
 .foolter-thuonghieu {
+  top: 55px;
   color: #d19c08;
 }
 
@@ -297,10 +309,6 @@ li {
 .foolter-colunm strong {
   font-weight: 700;
   color: #000000;
-}
-
-.bocongthuong {
-  width: 250px;
 }
 
 .socials li,
