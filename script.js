@@ -26,6 +26,5 @@ function imgAuto() {
     index = 0;
   }
   document.querySelector(".slider-child").style.right = index * 100 + "%";
-  console.log(index);
 }
 setInterval(imgAuto, 5000);
