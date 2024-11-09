@@ -2,7 +2,6 @@
 const classImg = document.querySelectorAll(
   ".product-content-left-mall-img img"
 );
-console.log(classImg);
 const idImg1 = document.getElementById("product-img-1");
 const idImg2 = document.getElementById("product-img-2");
 const idImg3 = document.getElementById("product-img-3");
@@ -10,7 +9,8 @@ const idImg4 = document.getElementById("product-img-4");
 const idImg5 = document.getElementById("product-img-5");
 const idImg6 = document.getElementById("product-img-6");
 const idImgBig = document.querySelector(".product-big-img");
-console.log(idImgBig);
+
+const spImg = document.getElementById("product-img-1");
 
 idImg1.addEventListener("click", () => {
   idImgBig.src = "./img/kem-nhung/kem-nhung.webp";
