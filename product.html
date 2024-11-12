@@ -98,6 +98,18 @@
     <!-- style css -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Shop YiYi Home</title>
+    <style>
+      .product-content img.active {
+        border: 2px solid #000;
+        border-radius: 5px;
+      }
+      .product-content-right .colorImg.imgActive {
+        border: 1px solid #000;
+        border-radius: 5px;
+        background: #7b4c02;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
     <!-- header------------------------------- -->
@@ -159,12 +171,14 @@
             <div class="product-content-left-big-img">
               <img
                 class="product-big-img"
+                id="product-big-img"
                 src="./img/kem-nhung/kem-nhung.webp"
                 alt=""
               />
             </div>
             <div class="product-content-left-mall-img">
               <img
+                class="active"
                 id="product-img-1"
                 src="./img/kem-nhung/kem-nhung.webp"
                 alt=""
@@ -211,159 +225,160 @@
             <div class="product-content-right-product-size">
               <p style="font-weight: bold">MÀU SẮC:</p>
               <div class="size">
-                <div class="color-img">
+                <!-- sp1 -->
+                <div class="colorImg imgActive">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/do-do.webp"
                     alt=""
                   /><span>ĐỎ ĐÔ</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp2 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/be-sua.webp"
                     alt=""
                   /><span>BE SỮA</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp3 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/cam-carot.webp"
                     alt=""
                   /><span>CAM CAROT</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp4 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/cam-huong-duong.webp"
                     alt=""
                   /><span>CAM HƯỚNG DƯƠNG</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp5 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/do-tham.webp"
                     alt=""
                   /><span>ĐỎ THẪM</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp6 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/do-tuoi.webp"
                     alt=""
                   /><span>ĐỎ TƯƠI</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp7 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/hong-dam.webp"
                     alt=""
                   /><span>HỒNG ĐẬM</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp8 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/hong-lai.webp"
                     alt=""
                   /><span>HÔNG LAI</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp9 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/hong-NUDE.webp"
                     alt=""
                   /><span>HÔNG NUDE</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp10 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/hong-phan.webp"
                     alt=""
                   /><span>HỒNG PHẤN</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp11 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/hong-sen.webp"
                     alt=""
                   /><span>HỒNG SEN</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp12 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/nau.webp"
                     alt=""
                   /><span>NÂU</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp13 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/ruou-vang.webp"
                     alt=""
                   /><span>RƯỢU VANG</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp14 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/tim-dam.webp"
                     alt=""
                   /><span>TÍM ĐẬM</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp15 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/tim-hong.webp"
                     alt=""
                   /><span>TÍM HỒNG</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp16 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/tim-nhat.webp"
                     alt=""
                   /><span>TÍM NHẠT</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp17 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/tim-pastel.webp"
                     alt=""
                   /><span>TIM PASTEL</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp18 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/trang.webp"
                     alt=""
                   /><span>TRẮNG</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp19 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/vang-dam (2).webp"
                     alt=""
                   /><span>VÀNG ĐẬM</span>
                 </div>
-
-                <div class="color-img">
+                <!-- sp20 -->
+                <div class="colorImg">
                   <img
                     style="width: 30px"
                     src="./img/kem-nhung/vang-nhat.webp"
