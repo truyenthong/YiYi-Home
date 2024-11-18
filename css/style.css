@@ -124,7 +124,42 @@ a .btn {
 .header-top-cart .cart {
   padding-top: 5px;
   border: 1px solid #3e3c37;
-  border-radius: 50px;
+  border-radius: 5px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu > a {
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 1000;
+}
+.dropdown a {
+  display: block;
+  text-align: center;
+  color: #d19c08;
+  padding: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.dropdown a:hover {
+  background-color: #555;
+}
+
+.menu:hover .dropdown {
+  display: block;
 }
 
 /* =========================DEAL  ===================== */
@@ -335,9 +370,8 @@ a .btn {
   font-weight: 700;
   color: #000000;
 }
-
-.socials li,
-a {
+.socials a,
+.socials li {
   color: #3e3c37;
   margin-top: 25px;
 }

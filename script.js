@@ -28,3 +28,14 @@ function imgAuto() {
   document.querySelector(".slider-child").style.right = index * 100 + "%";
 }
 setInterval(imgAuto, 5000);
+// san pham copy
+document.querySelectorAll(".dropdown a").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
